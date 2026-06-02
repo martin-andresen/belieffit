@@ -27,7 +27,7 @@ help belieffit
 
 ```stata
 belieffit logbelief, absorb(person job) reps(500) vce(person job)
-belieffit logbelief, absorb(person job) reps(500) vce(person job) aux(name(mean) regress {mean} gender {W}; name(variance) regress {var} gender {W})
+belieffit logbelief, absorb(person job) reps(500) vce(person job) aux(name(mean) regress {mean} gender {W})
 ```
 
 See the Stata help file for full syntax and options:
