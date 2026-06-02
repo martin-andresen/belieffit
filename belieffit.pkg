@@ -1,0 +1,12 @@
+v 3
+d belieffit: Stata command for fitting a two-equation belief model with fixed-point iteration
+d
+d belieffit estimates posterior mean log beliefs and corrects parametrically for bias from posterior variance.
+d The command combines a corrected-mean equation and a PPML variance equation, iterating until the predicted variance stabilizes.
+d
+d Author: Martin Eckhoff Andresen, University of Oslo
+d Repository: https://github.com/martin-andresen/belieffit
+d Requires: reghdfe and ppmlhdfe
+d
+f belieffit.ado
+f belieffit.sthlp
