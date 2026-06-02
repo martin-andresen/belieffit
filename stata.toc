@@ -1,0 +1,3 @@
+v 3
+d belieffit: Stata procedure to estimate posterior mean of log beliefs with a parametric correction for posterior variance
+p belieffit Stata command for fitting a two-equation belief model with fixed-point iteration
