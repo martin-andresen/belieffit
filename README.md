@@ -39,7 +39,7 @@ help belieffit
 
 If you use `belieffit`, please cite:
 
-Martin Eckhoff Andresen, Manudeep Bhuller, and Alfred Lovgren. *Pay Beliefs and the Amenity-Pay Tradeoff*.
+Martin Eckhoff Andresen, Manudeep Bhuller, and Alfred Løvgren. [*Pay Beliefs and the Amenity-Pay Tradeoff*](https://arxiv.org/pdf/2606.02503).
 
 ## License
 
