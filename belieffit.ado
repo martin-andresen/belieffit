@@ -538,33 +538,5 @@
 		// leaves: pred_mean, pred_var, and optionally fe1..fe(2K) in data
 		ereturn display
 	end
-	
-program define calcmisinf, rclass
-	version 17.0
-	syntax varlist [aw] ,[replace center]
-	quietly {
-		if "`replace'"!="" {
-			cap drop I
-			cap drop M
-			cap drop S
-		}
-		reg `varlist' bn.batch if infot==0 [`weight'`exp'], nocons
-		tempname pred
-		predict double `pred'
-		su logwage [`weight'`exp']
-		loc mlogwage=r(mean)
-		gen I=`mlogwage'+log(kpi/100)-`pred' if `pred'!=0
-		gen S=-log(kpi/100)
-		gen M=`mlogwage'-`pred' if `pred'!=0
-		if "`center'"!="" {
-			su M [`weight'`exp']
-			replace M=M-r(mean)
-			su S  [`weight'`exp']
-			replace S=S-r(mean)
-			su I [`weight'`exp']
-			replace I=I-r(mean)
-			}
-	}
-end
 
 
